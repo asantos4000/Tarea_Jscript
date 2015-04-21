@@ -10,7 +10,7 @@
 	<script  type="text/javascript">
 	//console.log("Hola Mundo");
 
-
+/*
 	var numero = 1;
 	var string = 'Hola Mundo';
 	var bool = false;
@@ -38,7 +38,7 @@
 	Asignar 4 variables utilizando los 4 operaodres de numeros,
 	comaprarlos e imprimir en la consola cuale es el mayor.
 	*/
-
+/*
 var a = 10 + 5;
 var b = 10 - 5;
 var c = 10 * 5;
@@ -61,7 +61,7 @@ if ( d > e) {
 	e = d;
 }
 
-console.log (' El valor mayor es ' + e);
+/*console.log (' El valor mayor es ' + e);
 
 for (var i = 0; i <= 10; i++) {
 	console.log(i);
@@ -73,15 +73,176 @@ for (var i = 0; i <= 10; i++) {
 	console.log(arr);
 	console.log(arr2);
 
+for (var i = 0; i < arr.length; i++) {
+			console.log(arr2[i]);
+};
+
+
+function suma(a, b) {
+	if (typeof a != 'number') {
+			console.log('El primer elemento no es un numero');
+		}else{
+				console.log(a + b);
+		};
+
+	}
+
+suma(1,2);
+suma(1,3);
+suma(1,4);
+suma(6,6);
+*/
+
+
+/*
+function div (a,b) {
+	if (a !=0 && b !=0) {
+		if ( typeof a ==='number' && typeof b === 'number') {
+				c = a/b;
+				console.log (c);
+		};
+	};
+	}
+
+div (-1,2);
+
+*/
+
+
+/*
+
+Declarar una funcion de suma, que reciba 2 numeros y una funcion.
+La funcion que se pase por atributo, debe imprimir "Hola Mundo"
+*/
+
+/*
+function suma(a, b, x) {
+				console.log(a + b);
+				x('Hola Mundo');
+		}
+
+function imprime(y) {
+		console.log (y);
+	}
+
+suma (2,3, imprime);
+
+*/
 
 
 
 
+/*
+Tarea 1
+*/
+
+/*
+function funk(x) {
+				
+				x('Hola Mundo');
+		}
+
+function imprime(y) {
+		console.log (y);
+	}
+
+funk (imprime);
+
+*/
+
+
+/* Tarea 2 */
+/*
+function funk(x) {
+				
+				console.log ('Hola Mundo');
+				x('Adios Mundo');
+
+		}
+
+function imprime(y) {
+		console.log (y);
+	}
+
+funk (imprime);
+
+
+*/
+
+/* Tarea 3 */
+
+/*
+
+function fun_imprime_500(x,y,z) {
+			for (var i = 1; i < y ; i++) {
+				console.log (i);		
+			};
+	z(x,y);
+	}
+	
+
+
+function imprimir(x,y) {
+			for (var i = y+1; i <= x ; i++) {
+				console.log (i);
+			
+			};
+		
+	}
+
+
+fun_imprime_500(500,450,imprimir);
+	
+*/
+
+/* Tarea 4 */
+/*
+function fun_imprime_par_impar(x,z) {
+			for (var i = 1; i <=x/2 ; i++) {
+				console.log (2*i);		
+			};
+	z(x);
+	}
+	
+
+
+function impar(y) {
+			for (var i = 0; i < y/2 ; i++) {
+				console.log (2*i+1);
+			
+			};
+		
+	}
+
+
+fun_imprime_par_impar(13,impar);
+
+*/	
+
+/* Tarea 5 solo para los primeros 100 */
+
+
+var primos = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97];
+
+function fun_numeros_primos_100(z) {
+			for (var i = 0; i < primos.length ; i++) {
+			
+				z(primos[i]);		
+			};
+	}
+	
+
+function imprimir(y) {
+				console.log (y);
+			
+	}
+		
+
+fun_numeros_primos_100(imprimir);
 
 
 
-
-	</script>
+</script>
 
 
 </body>
